@@ -1,0 +1,14 @@
+
+<h2>Register</h2>
+
+<form method="post">
+    {% csrf_token %}
+        {{p_form}}<br><br>
+        {{u_form}}<br><br>
+       
+    <input type="submit" value="Submit"><br>
+    <a href="{% url 'logout' %}">Logout</a>
+</form>
+
+
+
